@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default</title>
+
+   <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> --> <!-- CDN Content Delivery Network where jquery is defined on server's-->
+
+    <script src = "jquery-3.4.1.js">
+    </script>
+
+</head>
+<body>
+    <h2 id="heading1">Setting Up jQuery</h2>
+    <br><br>
+    <button onclick="fun()" id="btn1">Clicked Me</button>
+</body>
+<script>
+function fun()
+{
+   $("#heading1").fadeToggle(2000); //"$" will called jQuery library, "# " is used for id, "." is used for class
+}
+</script>
+</html>

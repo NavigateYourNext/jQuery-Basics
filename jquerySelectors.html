@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Selectors</title>
+    <link rel="stylesheet" href="style.css">
+
+   <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> --> <!-- CDN Content Delivery Network where jquery is defined on server's-->
+
+    <script src = "jquery-3.4.1.js">
+    </script>
+
+</head>
+<body>
+    <h2 id="heading1">Setting Up jQuery</h2>
+    <br><br>
+    <button onclick="fun()" id="btn1">Clicked Me</button>
+</body>
+<script>
+function fun()
+{
+  $("#heading1").fadeToggle();
+  //$("div > p") stand for div is a parent element and p is a child element which is similar to div p
+  //$("p:first") stand for first paragraph
+  //$(".mydivs:even") stand for even classes
+  //$(".mydivs:odd8") stand for odd classes
+
+}
+</script>
+</html>

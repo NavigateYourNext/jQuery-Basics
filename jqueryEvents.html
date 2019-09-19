@@ -35,7 +35,55 @@
   //$("p:first") stand for first paragraph
   //$(".mydivs:even") stand for even classes
   //$(".mydivs:odd8") stand for odd classes
+  //$("#btn1).hide(); stand for hide id because it cotains # for class use .
+  //$("#btn1).show(); stand for unhide id because it cotains # for class use .
+  //$("#btn1).toggle(); stand for hide id or something if its visible and unhide the same if its invisible.
+  //$("btn1").fadeIn(2000); stand for fadeIn something for 2000 ms
+  //$("btn1").fadeOut(2000); stand for fadeOut something for 2000 ms
+  //$("btn1").slideUp(); to do slide up something
+  //$("btn1").slideDown(); to do slide down something
+  //$("btn1").animate({left:'150px',opacity:'0.7',width:'100px',height:'100px'},1000); Provide CSS to an element, second parameter is time in ms
+  //callback stands for to wait execution of next line till current line properly executed. For Ex:- 
 
+
+
+//   $("btn1").fadeOut(2000,function(){  //the second parameter in fadeOut is actually callback function which will execute when time period(1st parameter) will lapse
+                                        // we can use this callback in any method and it should be last parameter of that method
+//       alert("CallBack Function");
+//   });
+
+
+//$("btn1").fadeOut(2000).fadeIn(2000).slideUp(2000).slideDown(2000) this is known as Chaining. All methods executed on selected element from left to right
+
+//alert($("#id").text());// will show alert with text of id or class passed as parameter
+//$("#id").text("Hello World"); //it will change text of id or class passed as parameter
+//$("#id").attr("id"); //it will return value of passed attribute on id or class
+//$("#id").css("color"); //it will return css attribute of passed parameter on id or class
+//$("#id").attr("class","myClass");//it will change value of class attribute to a new value passed as second parameter
+
+
+
+// <!-- 
+// append() - Insert contents at the end of the selected elements
+// prepend() - Insert contents at the begining of the selected elements
+// after() - Insert contents after the selected elements
+// before() - Insert cotents before the selected elements
+// -->
+
+//$("#id1").append("<p>Hello World</p>"); //it will append text to the selected id or class or anything
+//$("#id1").remove(); //it will remove entire selected element
+//$("#id1").empty();  //it will removes content of selected element
+//$("p").remove("#p2"); //it will remove p2 from p element. If want to remove multiple tags from same element then specify it with ","
+
+//addClass() - Adds one or more classes to the selected elements
+//removeClass() - removes one or more classes from the selected elements
+//toggleClass() - toggles between adding/removing classes from the selcted elements
+//css() - sets or returns the style attribute
+
+//$("#id").addClass("newClass"); it will add newClass to the selected element if you want to add more class then passed it to addClass method seperated by " "
+      
+      
+      
         }
     });
 //     $("#btn1").click(fun); //it is equivalent method of onClick event
